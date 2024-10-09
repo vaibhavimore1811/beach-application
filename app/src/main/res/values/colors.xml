@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    primary color shades-->
+    <color name="primaryColor">#1C94AD</color>
+    <color name="primaryDarkColor">#026175</color>
+    <color name="accentColor">#FF5722</color>
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="textColor">#000000</color>
+    <color name="primaryColorLight">#C6EEF6</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <!-- Primary color -->
+    <color name="primaryColor_1">#E1F5FE</color>
+    <color name="primaryColor_2">#B3E5FC</color>
+    <color name="primaryColor_3">#81D4FA</color>
+    <color name="primaryColor_4">#4FC3F7</color>
+    <color name="primaryColor_5">#29B6F6</color>
+    <color name="primaryColor_6">#03A9F4</color>
+    <color name="primaryColor_7">#039BE5</color>
+    <color name="primaryColor_8">#0288D1</color>
+    <color name="primaryColor_9">#0277BD</color>
+    <color name="primaryColor_10">#01579B</color>
+    <color name="primaryColor_11">#80D8FF</color>
+    <color name="primaryColor_12">#40C4FF</color>
+    <color name="primaryColor_13">#00B0FF</color>
+    <color name="primaryColor_14">#0091EA</color>
+
+
+
+
+    <!--  accentColor  -->
+    <color name="accentColor_1">#FFECE6</color>
+    <color name="accentColor_2">#FFAD92</color>
+    <color name="accentColor_3">#F1977A</color>
+    <color name="accentColor_4">#DA5F38</color>
+    <color name="accentColor_5">#FF7145</color>
+    <color name="accentColor_6">#B65536</color>
+    <color name="accentColor_7">#BD3004</color>
+    <color name="accentColor_8">#EA420B</color>
+    <color name="accentColor_9">#FF5722</color>
+    <color name="accentColor_10">#FF5722</color>
+    <color name="accentColor_11">#FF5722</color>
+    <color name="accentColor_12">#532618</color>
+    <color name="accentColor_13">#CA3000</color>
+    <color name="accentColor_14">#B12F05</color>
+
+    <!-- gray color -->
+    <color name="grayLightest">#FAFAFA</color>
+    <color name="grayLighter">#F0F0F0</color>
+    <color name="grayLight">#D3D3D3</color>
+    <color name="grayMediumLight">#A9A9A9</color>
+    <color name="grayMedium">#808080</color>
+    <color name="grayMediumDark">#696969</color>
+    <color name="grayDark">#505050</color>
+    <color name="grayDarker">#383838</color>
+    <color name="grayDarkest">#202020</color>
+
+    <color name="orange">#FE4301</color>
+    <color name="red">#F30000</color>
+    <color name="orange_1">#FE9457</color>
+    <color name="orange_2">#FDC06E</color>
+    <color name="royal_blue">#0F204C</color>
+    <color name="royal_blue_1">#686E91</color>
+
+
+    <!-- GREEN   -->
+    <color name="green_1">#E8F5E9</color>
+    <color name="green_2">#C8E6C9</color>
+    <color name="green_3">#A5D6A7</color>
+    <color name="green_4">#81C784</color>
+    <color name="green_5">#66BB6A</color>
+    <color name="green_6">#4CAF50</color>
+    <color name="green_7">#43A047</color>
+    <color name="green_8">#388E3C</color>
+    <color name="green_9">#2E7D32</color>
+    <color name="green_10">#1B5E20</color>
+    <color name="green_11">#B9F6CA</color>
+    <color name="green_12">#69F0AE</color>
+    <color name="green_13">#00E676</color>
+    <color name="green_14">#00C853</color>
+
+    <!--   LIGHT GREEN -->
+    <color name="light_green_1">#F1F8E9</color>
+    <color name="light_green_2">#DCEDC8</color>
+    <color name="light_green_3">#C5E1A5</color>
+    <color name="light_green_4">#AED581</color>
+    <color name="light_green_5">#9CCC65</color>
+    <color name="light_green_6">#8BC34A</color>
+    <color name="light_green_7">#7CB342</color>
+    <color name="light_green_8">#689F38</color>
+    <color name="light_green_9">#558B2F</color>
+    <color name="light_green_10">#33691E</color>
+    <color name="light_green_11">#CCFF90</color>
+    <color name="light_green_12">#B2FF59</color>
+    <color name="light_green_13">#76FF03</color>
+    <color name="light_green_14">#64DD17</color>
+</resources>
