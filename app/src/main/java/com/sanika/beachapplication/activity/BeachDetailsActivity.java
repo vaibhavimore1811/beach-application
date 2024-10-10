@@ -229,39 +229,57 @@ public class BeachDetailsActivity extends AppCompatActivity {
         setWeatherIconAndAlert(weatherDescription, temperature);
     }
     private void setWeatherIconAndAlert(String weatherDescription, double temperature) {
-        int weatherIconResourceId = R.drawable.sun; // Default icon
+        int weatherIconResourceId = R.drawable.sun; // Default icon for sunny weather
         boolean showAlert = false;
 
-        // Use if-else statements to check conditions
+        // Check various weather conditions
         if (weatherDescription.contains("heavy rain")) {
-            weatherIconResourceId = R.drawable.heavy_rain; // Resource for heavy rain
-            showAlert = temperature > 30; // Alert if heavy rain and hot
+            weatherIconResourceId = R.drawable.heavy_rain; // Icon for heavy rain
+            showAlert = temperature > 30; // Alert if it's hot and raining heavily
         } else if (weatherDescription.contains("thunderstorm")) {
-            weatherIconResourceId = R.drawable.thunderstorm; // Resource for thunderstorm
+            weatherIconResourceId = R.drawable.thunderstorm; // Icon for thunderstorms
             showAlert = true; // Always alert for thunderstorms
         } else if (weatherDescription.contains("clear") || weatherDescription.contains("sunny")) {
-            weatherIconResourceId = R.drawable.sun; // Resource for sunny weather
+            weatherIconResourceId = R.drawable.sun; // Icon for clear or sunny weather
+            showAlert = temperature > 40; // Alert for extremely high temperatures
         } else if (weatherDescription.contains("cloud")) {
-            weatherIconResourceId = R.drawable.cloudy; // Resource for cloudy weather
+            weatherIconResourceId = R.drawable.cloudy; // Icon for cloudy weather
         } else if (weatherDescription.contains("hot")) {
-            weatherIconResourceId = R.drawable.hot; // Resource for hot weather
+            weatherIconResourceId = R.drawable.hot; // Icon for hot weather
             showAlert = temperature > 35; // Alert for extreme heat
         } else if (weatherDescription.contains("snow")) {
-            weatherIconResourceId = R.drawable.snow; // Resource for snow
+            weatherIconResourceId = R.drawable.snow; // Icon for snowy weather
             showAlert = true; // Always alert for snow
         } else if (weatherDescription.contains("fog")) {
-            weatherIconResourceId = R.drawable.fog; // Resource for fog
+            weatherIconResourceId = R.drawable.fog; // Icon for foggy weather
             showAlert = true; // Always alert for fog
         } else if (weatherDescription.contains("mist")) {
-            weatherIconResourceId = R.drawable.mist; // Resource for mist
+            weatherIconResourceId = R.drawable.mist; // Icon for misty weather
+        } else if (weatherDescription.contains("hail")) {
+            weatherIconResourceId = R.drawable.hail; // Icon for hail
+            showAlert = true; // Always alert for hail
+        } else if (weatherDescription.contains("windy") || weatherDescription.contains("storm")) {
+            weatherIconResourceId = R.drawable.wind; // Icon for windy or stormy weather
+            showAlert = true; // Always alert for storms and strong winds
+        } else if (weatherDescription.contains("drizzle")) {
+            weatherIconResourceId = R.drawable.drizzle; // Icon for light rain or drizzle
+        } else if (weatherDescription.contains("sleet")) {
+            weatherIconResourceId = R.drawable.sleet; // Icon for sleet
+            showAlert = true; // Always alert for sleet
+        } else if (weatherDescription.contains("cold")) {
+            weatherIconResourceId = R.drawable.cold; // Icon for cold weather
+            showAlert = temperature < 0; // Alert if it's freezing
+        } else if (weatherDescription.contains("haze")) {
+            weatherIconResourceId = R.drawable.haze; // Icon for haze
+            showAlert = true; // Always alert for haze due to poor visibility and air quality
         }
 
-        // Update the icon
+        // Update the weather icon in the UI
         imgtemp.setImageResource(weatherIconResourceId);
 
-        // Show alert if conditions are met
+        // Show weather alert if conditions are met
         if (showAlert) {
-            showWeatherAlert();
+            showWeatherAlert(); // Call the alert method to display warnings
         }
     }
 
