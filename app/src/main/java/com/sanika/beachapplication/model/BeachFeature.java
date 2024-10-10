@@ -1,8 +1,6 @@
 package com.sanika.beachapplication.model;
 
-import com.google.gson.annotations.SerializedName;
-
-public class Beach {
+public class BeachFeature {
     private String type;
     private BeachProperties properties;
     private Geometry geometry;
@@ -31,4 +29,3 @@ public class Beach {
         this.geometry = geometry;
     }
 }
-

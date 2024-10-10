@@ -2,6 +2,7 @@
 package com.sanika.beachapplication.fragment;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
@@ -27,8 +28,12 @@ import com.sanika.beachapplication.R;
 import com.sanika.beachapplication.adapter.BeachAdapter;
 import com.sanika.beachapplication.api.ApiClient;
 import com.sanika.beachapplication.api.ApiInterface;
+import com.sanika.beachapplication.constance.ConstanceMethod;
 import com.sanika.beachapplication.model.Beach;
+import com.sanika.beachapplication.model.BeachFeature;
+import com.sanika.beachapplication.model.BeachResponse;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,7 +49,8 @@ public class HomeFragment extends Fragment {
     private LocationCallback locationCallback;
     private RecyclerView recyclerView;
     private BeachAdapter beachAdapter;
-    private List<Beach> beachList;
+    private List<BeachFeature> beachList;
+    Dialog progressdialog;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -58,7 +64,7 @@ public class HomeFragment extends Fragment {
         beachList = new ArrayList<>();
         beachAdapter = new BeachAdapter(requireActivity(), beachList);
         recyclerView.setAdapter(beachAdapter);
-
+        progressdialog = ConstanceMethod.ShowProgressDialog(requireActivity());
         // Initialize FusedLocationProviderClient
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity());
 
@@ -125,30 +131,56 @@ public class HomeFragment extends Fragment {
     }
 
     // Fetch Nearby Beaches
-    private void fetchNearbyBeaches(double latitude, double longitude) {
+    private void fetchNearbyBeaches(double latitud1e, double longitu1de) {
+        progressdialog.show();
+        double latitude = 19.0760; // Mumbai Latitude
+        double longitude = 72.8777; // Mumbai Longitude
+        String categories = "beach"; // Category for beaches
+        String filter = "circle:" + longitude + "," + latitude + ",10000"; // 10 km radius
+        String bias = "proximity:" + longitude + "," + latitude; // Bias search towards user's location
+        int limit = 20; // Limit to 20 results
+        String apiKey = "516a96358b224a52a3318d472455f147"; // Replace with your actual API key
+
         ApiInterface apiInterface = ApiClient.getApi();
-        Call<List<Beach>> call = apiInterface.getNearbyBeaches("beach", "json", latitude, longitude, 5000);
+        Call<BeachResponse> call = apiInterface.getNearbyBeaches(categories, filter, bias, limit, apiKey);
 
-        // Check if the correct coordinates are being passed
-        Log.d("Location", "Latitude: " + latitude + ", Longitude: " + longitude);
+        // Log the full request URL
+        String requestUrl = "https://api.geoapify.com/v2/places?categories=" + categories + "&filter=" + filter + "&bias=" + bias + "&limit=" + limit + "&apiKey=" + apiKey;
+        Log.d("API Request", "Request URL: " + requestUrl);
 
-        call.enqueue(new Callback<List<Beach>>() {
+        call.enqueue(new Callback<BeachResponse>() {
             @Override
-            public void onResponse(Call<List<Beach>> call, Response<List<Beach>> response) {if (response.isSuccessful() && response.body() != null) {
+            public void onResponse(Call<BeachResponse> call, Response<BeachResponse> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    if (response.body().getFeatures().isEmpty()) {
+                        Log.e("Error", "No beaches found in the specified area.");
+                    }
                     beachList.clear();
-                    beachList.addAll(response.body());
+                    beachList.addAll(response.body().getFeatures());
                     beachAdapter.notifyDataSetChanged();
+
+                    // Log the received beach details
+                    for (BeachFeature beach : beachList) {
+                        Log.d("Beach Details", "Name: " + beach.getProperties().getName() + ", Address: " + beach.getProperties().getName());
+                    }
                 } else {
-                    Log.e("Error", "Failed to fetch beaches. Response not successful.");
-                    Toast.makeText(requireContext(), "Failed to fetch beaches", Toast.LENGTH_SHORT).show();
+                    Log.e("Error", "Response not successful. Code: " + response.code() + ", Message: " + response.message());
+                    try {
+                        Log.e("Response", "Body: " + response.errorBody().string());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
+                progressdialog.dismiss();
             }
 
             @Override
-            public void onFailure(Call<List<Beach>> call, Throwable t) {
+            public void onFailure(Call<BeachResponse> call, Throwable t) {
+                progressdialog.dismiss();
                 Log.e("Error", "Failed to fetch beaches: " + t.getMessage());
                 Toast.makeText(requireContext(), "Error fetching beaches: " + t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
+
 }

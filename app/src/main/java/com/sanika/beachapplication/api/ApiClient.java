@@ -23,14 +23,18 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+// ApiClient.java
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 public class ApiClient {
-    private static final String BASE_URL = "https://nominatim.openstreetmap.org/";
+
     private static Retrofit retrofit = null;
 
-    public static Retrofit getInstance() {
+    public static Retrofit getApiClient() {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl(BASE_URL)
+                    .baseUrl("https://api.geoapify.com/") // Geoapify API Base URL
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
@@ -38,6 +42,7 @@ public class ApiClient {
     }
 
     public static ApiInterface getApi() {
-        return getInstance().create(ApiInterface.class);
+        return getApiClient().create(ApiInterface.class);
     }
 }
+

@@ -2,8 +2,8 @@
 <resources>
 
     <!--    primary color shades-->
-    <color name="primaryColor">#1C94AD</color>
-    <color name="primaryDarkColor">#026175</color>
+    <color name="primaryColor">#4605BA</color>
+    <color name="primaryDarkColor">#240360</color>
     <color name="accentColor">#FF5722</color>
     <color name="backgroundColor">#FFFFFF</color>
     <color name="textColor">#000000</color>
@@ -11,20 +11,20 @@
     <color name="transparent">#00FFFFFF</color>
 
     <!-- Primary color -->
-    <color name="primaryColor_1">#E1F5FE</color>
-    <color name="primaryColor_2">#B3E5FC</color>
-    <color name="primaryColor_3">#81D4FA</color>
-    <color name="primaryColor_4">#4FC3F7</color>
-    <color name="primaryColor_5">#29B6F6</color>
-    <color name="primaryColor_6">#03A9F4</color>
-    <color name="primaryColor_7">#039BE5</color>
-    <color name="primaryColor_8">#0288D1</color>
-    <color name="primaryColor_9">#0277BD</color>
-    <color name="primaryColor_10">#01579B</color>
-    <color name="primaryColor_11">#80D8FF</color>
-    <color name="primaryColor_12">#40C4FF</color>
-    <color name="primaryColor_13">#00B0FF</color>
-    <color name="primaryColor_14">#0091EA</color>
+    <color name="primaryColor_1">#DFCEFF</color>
+    <color name="primaryColor_2">#A588DA</color>
+    <color name="primaryColor_3">#A979FF</color>
+    <color name="primaryColor_4">#915BF1</color>
+    <color name="primaryColor_5">#7F3BF8</color>
+    <color name="primaryColor_6">#622DBF</color>
+    <color name="primaryColor_7">#5113C1</color>
+    <color name="primaryColor_8">#310581</color>
+    <color name="primaryColor_9">#3E128C</color>
+    <color name="primaryColor_10">#290E59</color>
+    <color name="primaryColor_11">#23025C</color>
+    <color name="primaryColor_12">#1D0B3E</color>
+    <color name="primaryColor_13">#1F0450</color>
+    <color name="primaryColor_14">#120C1E</color>
 
 
 
