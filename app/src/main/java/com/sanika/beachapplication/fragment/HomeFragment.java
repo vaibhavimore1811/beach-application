@@ -6,10 +6,13 @@ import android.app.Dialog;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -49,8 +52,10 @@ public class HomeFragment extends Fragment {
     private LocationCallback locationCallback;
     private RecyclerView recyclerView;
     private BeachAdapter beachAdapter;
+    private List<BeachFeature> beachListmain;
     private List<BeachFeature> beachList;
     Dialog progressdialog;
+    EditText editText;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -58,10 +63,12 @@ public class HomeFragment extends Fragment {
 
         // Initialize RecyclerView and set layout manager
         recyclerView = view.findViewById(R.id.recyclerViewBeaches);
+        editText = view.findViewById(R.id.editText);
         recyclerView.setLayoutManager(new LinearLayoutManager(requireActivity()));
 
         // Initialize list and adapter
         beachList = new ArrayList<>();
+        beachListmain = new ArrayList<>();
         beachAdapter = new BeachAdapter(requireActivity(), beachList);
         recyclerView.setAdapter(beachAdapter);
         progressdialog = ConstanceMethod.ShowProgressDialog(requireActivity());
@@ -92,7 +99,43 @@ public class HomeFragment extends Fragment {
 
         // Request location and fetch data
         getLocationAndFetchData();
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
 
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (beachListmain.size() > 0) {
+                    // Clear the current beachList before populating it with filtered results
+                    beachList.clear();
+
+                    // Check if the search string 's' is not null or empty
+                    if (s != null) {
+                        // Iterate over the main list
+                        for (int i = 0; i < beachListmain.size(); i++) {
+                            BeachFeature beach = beachListmain.get(i);
+                            // Check if the beach name contains the search string (case insensitive)
+                            if (beach.getProperties().getName() != null &&
+                                    beach.getProperties().getName().toLowerCase().contains(s.toString().toLowerCase())) {
+                                beachList.add(beach); // Add matching beach to the filtered list
+                            }
+                        }
+                    } else {
+                        // If the search string is empty, you may want to copy all items from the main list
+                        beachList.addAll(beachListmain);
+                    }
+
+                    // Notify the adapter that the data has changed
+                    beachAdapter.notifyDataSetChanged();
+                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
+        });
         return view;
     }
 
@@ -156,6 +199,8 @@ public class HomeFragment extends Fragment {
                         Log.e("Error", "No beaches found in the specified area.");
                     }
                     beachList.clear();
+                    beachListmain.clear();
+                    beachListmain.addAll(response.body().getFeatures());
                     beachList.addAll(response.body().getFeatures());
                     beachAdapter.notifyDataSetChanged();
 
