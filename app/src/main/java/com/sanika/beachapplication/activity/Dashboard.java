@@ -27,6 +27,7 @@ import com.sanika.beachapplication.adapter.BeachAdapter;
 import com.sanika.beachapplication.api.ApiClient;
 import com.sanika.beachapplication.api.ApiInterface;
 import com.sanika.beachapplication.fragment.HomeFragment;
+import com.sanika.beachapplication.fragment.LanguageFragment;
 import com.sanika.beachapplication.fragment.ProfileFragment;
 import com.sanika.beachapplication.fragment.SettingsFragment;
 import com.sanika.beachapplication.model.Beach;
@@ -67,6 +68,8 @@ public class Dashboard extends AppCompatActivity {
 //                }
                 else if (itemId == R.id.profile) {
                     selectedFragment = new ProfileFragment();
+                }else if (itemId == R.id.language) {
+                    selectedFragment = new LanguageFragment();
                 }
                 // It will help to replace the
                 // one fragment to other.

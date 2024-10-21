@@ -11,6 +11,7 @@ public class SharedPref {
     public static String PrefName = "SharedPref";
     public static String PrefNameLocale = "SharedPrefLocale";
     public static final String NIGHT_MODE = "NIGHT_MODE";
+    public static String locale = "locale";
     public static final String IS_INTRO_OPENED = "IS_INTRO_OPENED";
     public static final String IS_LOGIN = "IS_LOGIN";
     public static final String Product_category = "Product_category";

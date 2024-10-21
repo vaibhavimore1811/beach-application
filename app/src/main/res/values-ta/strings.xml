@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">கடற்கரை பயன்பாடு</string>
+    <string name="slogan">நீங்கள் எப்போதும் கடற்கரை தினத்தை கண்டறியுங்கள்</string>
+    <string name="close">மூடுக</string>
+    <string name="done_">முடிந்தது</string>
+    <string name="verison_1_0_0">பதிப்பு: 1.0.0</string>
+    <string name="weather_alert">வானிலை எச்சரிக்கை</string>
+    <string name="weather_alert_dis">நிகழ்காலத்தில் கடுமையான மழையும் சூடான வெப்பநிலையும் உள்ளன. பாதுகாப்பாக இருங்கள்!</string>
+    <string name="weather_heavy_rain">கடுமையான மழை</string>
+    <string name="weather_thunderstorm">இடி மின்னல்</string>
+    <string name="weather_clear">தெளிவு</string>
+    <string name="weather_sunny">வெயில்</string>
+    <string name="weather_cloud">மேகமூட்டம்</string>
+    <string name="weather_hot">சூடான</string>
+    <string name="weather_snow">பனிமழை</string>
+    <string name="weather_fog">மூடுபனி</string>
+    <string name="weather_mist">பனிமூடல்</string>
+    <string name="weather_hail">கல் மழை</string>
+    <string name="weather_windy">காற்று</string>
+    <string name="weather_storm">புயல்</string>
+    <string name="weather_drizzle">நனைத்தல் மழை</string>
+    <string name="weather_sleet">பனியுடன் மழை</string>
+    <string name="weather_cold">குளிர்</string>
+    <string name="weather_haze">பனிமூட்டம்</string>
+    <string name="alert_heavy_rain_hot">எச்சரிக்கை: கடுமையான மழையுடன் சூடான வெப்பநிலை</string>
+    <string name="alert_thunderstorm">எச்சரிக்கை: இடி மின்னல்</string>
+    <string name="alert_extreme_heat">எச்சரிக்கை: அதிக சூடு</string>
+    <string name="alert_snow">எச்சரிக்கை: பனியுடன் மழை</string>
+    <string name="alert_fog">எச்சரிக்கை: மூடுபனி</string>
+    <string name="alert_hail">எச்சரிக்கை: கல் மழை</string>
+    <string name="alert_strong_winds">எச்சரிக்கை: கடுமையான காற்றுடன் புயல்</string>
+    <string name="alert_extreme_cold">எச்சரிக்கை: அதிக குளிர்</string>
+    <string name="alert_haze">எச்சரிக்கை: தெளிவான காட்சியறிவு குறைவாகும்</string>
+    <string name="title_sun_and_sand">சூரியன் மற்றும் மணல்</string>
+    <string name="title_beachfront_adventure">கடற்கரை விளையாட்டு</string>
+    <string name="app_language">அப்பிளிக்கேஷன் மொழி</string>
+    <string name="app_details">அப்பிளிக்கேஷன் விவரங்கள்</string>
+    <string name="home">முதன்மை</string>
+    <string name="hello_blank_fragment">வணக்கம், வெறுமனைப் பகுதி</string>
+    <string name="selected_language_error">தயவுசெய்து மொழியைத் தேர்ந்தெடுக்கவும்</string>
+    <!-- English -->
+    <string name="english">English</string>
+    <string name="english_title">English</string>
+
+    <!-- Hindi -->
+    <string name="hindi">हिंदी</string>
+    <string name="hindi_title">Hindi</string>
+
+    <!-- Bengali -->
+    <string name="bengali">বাংলা</string>
+    <string name="bengali_title">Bengali</string>
+
+    <!-- Malayalam -->
+    <string name="malayalam">മലയാളം</string>
+    <string name="malayalam_title">Malayalam</string>
+
+    <!-- Tamil -->
+    <string name="tamil">தமிழ்</string>
+    <string name="tamil_title">Tamil</string>
+
+    <!-- Arabic -->
+    <string name="arabic">العربية</string>
+    <string name="arabic_title">Arabic</string>
+
+    <!-- Spanish -->
+    <string name="spanish">Español</string>
+    <string name="spanish_title">Spanish</string>
+
+    <!-- Marathi -->
+    <string name="marathi">मराठी</string>
+    <string name="marathi_title">Marathi</string>
+    <string name="next">அடுத்தது</string>
+    <string name="get_started">தொடங்கவும்</string>
+    <string name="skip">மறிக்குறிக்க</string>
+    <string name="continue_">தொடருங்கள்</string>
+    <string name="title_seaside_relaxation">கடலோர சஞ்சாரம்</string>
+    <string name="desc_sun_and_sand">சூரியனின் தங்கத் தெளிவைப் பொறுக்கவும், உங்கள் கால்களில் மென்மையான மணலின் அன்பைப் பெறுங்கள். உங்கள் அவசியமான கடற்கரை விடுமுறை இருக்கிறது.</string>
+    <string name="desc_beachfront_adventure">அற்புதமான நீர்விளையாட்டுகள், கடற்கரை விளையாட்டுகள் மற்றும் கடற்கரையின் பரந்த சாகசங்களை அனுபவிக்க ஒரு மறக்கமுடியாத நாள்.</string>
+    <string name="desc_seaside_relaxation">இயல்பான முன்பதிவுகளுடன், பீச்சில் சீட் வசதிகளை அனுபவிக்கவும்.</string>
+</resources>

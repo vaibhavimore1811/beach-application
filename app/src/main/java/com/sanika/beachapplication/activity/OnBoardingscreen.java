@@ -75,9 +75,20 @@ public class OnBoardingscreen extends AppCompatActivity {
         // fill list screen
 
         final List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("Sun & Sand", "Bask in the golden rays and feel the soft sand between your toes. Your perfect beach escape awaits.", R.drawable.img1));
-        mList.add(new ScreenItem("Beachfront Adventure", "Experience thrilling water sports, beach games, and coastal activities for an unforgettable day by the sea.", R.drawable.img2));
-        mList.add(new ScreenItem("Seaside Relaxation", "Unwind with easy bookings for beach chairs, umbrellas, and more. Relax and let the ocean breeze rejuvenate you.", R.drawable.img3));
+        mList.add(new ScreenItem(
+                getString(R.string.title_sun_and_sand),
+                getString(R.string.desc_sun_and_sand),
+                R.drawable.img1));
+
+        mList.add(new ScreenItem(
+                getString(R.string.title_beachfront_adventure),
+                getString(R.string.desc_beachfront_adventure),
+                R.drawable.img2));
+
+        mList.add(new ScreenItem(
+                getString(R.string.title_seaside_relaxation),
+                getString(R.string.desc_seaside_relaxation),
+                R.drawable.img3));
 
         // setup viewpager
         screenPager =findViewById(R.id.screen_viewpager);

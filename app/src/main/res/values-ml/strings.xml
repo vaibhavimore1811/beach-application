@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ബീച്ച് ആപ്പ്</string>
+    <string name="slogan">നിങ്ങളുടെ സര്വ്വോത്തമമായ ബീച്ച് ദിവസം പ്രതിദിനം കണ്ടെത്തൂ</string>
+    <string name="close">അടയ്‌ക്കുക</string>
+    <string name="done_">പൂർത്തിയായി</string>
+    <string name="verison_1_0_0">പതിപ്പ്: 1.0.0</string>
+    <string name="weather_alert">കാലാവസ്ഥാ മുന്നറിയിപ്പ്</string>
+    <string name="weather_alert_dis">ഇപ്പോൾ പുറത്തു കനത്ത മഴയും കൂടാതെ ചൂടും ഉണ്ട‌. സുരക്ഷിതമായി ഇരിക്കുക!</string>
+    <string name="weather_heavy_rain">കനത്ത മഴ</string>
+    <string name="weather_thunderstorm">ഇടിയുള്ള മിന്നൽ</string>
+    <string name="weather_clear">സ്വച്ഛം</string>
+    <string name="weather_sunny">സൂര്യപ്രകാശം</string>
+    <string name="weather_cloud">മേഘാവൃതം</string>
+    <string name="weather_hot">ചൂട്</string>
+    <string name="weather_snow">മഞ്ഞു</string>
+    <string name="weather_fog">മഞ്ഞ്</string>
+    <string name="weather_mist">മഞ്ഞുമൂടിയ</string>
+    <string name="weather_hail">കാലവർഷം</string>
+    <string name="weather_windy">കാറ്റുള്ള</string>
+    <string name="weather_storm">പെയ്ത്ത്</string>
+    <string name="weather_drizzle">തുള്ളല് മഴ</string>
+    <string name="weather_sleet">മഞ്ഞുപെയ്യൽ</string>
+    <string name="weather_cold">തണുപ്പ്</string>
+    <string name="weather_haze">അവസ്ഥ മങ്ങിയ</string>
+    <string name="alert_heavy_rain_hot">മുന്നറിയിപ്പ്: കനത്ത മഴയും കൂടിയ താപനിലയും</string>
+    <string name="alert_thunderstorm">മുന്നറിയിപ്പ്: ഇടിയുള്ള മിന്നൽ</string>
+    <string name="alert_extreme_heat">മുന്നറിയിപ്പ്: അതിശയകരമായ ചൂട്</string>
+    <string name="alert_snow">മുന്നറിയിപ്പ്: മഞ്ഞുവീഴ്ച</string>
+    <string name="alert_fog">മുന്നറിയിപ്പ്: മഞ്ഞ്</string>
+    <string name="alert_hail">മുന്നറിയിപ്പ്: കാലവർഷം</string>
+    <string name="alert_strong_winds">മുന്നറിയിപ്പ്: ശക്തമായ കാറ്റ്</string>
+    <string name="alert_extreme_cold">മുന്നറിയിപ്പ്: അമിത തണുപ്പ്</string>
+    <string name="alert_haze">മുന്നറിയിപ്പ്: ദൃശ്യപരത കുറവ്, വായു മലിനീകരണം</string>
+    <string name="title_sun_and_sand">സൂര്യനും മണലും</string>
+    <string name="app_language">അപ്പ് ഭാഷ</string>
+    <string name="app_details">അപ്പ് വിശദാംശങ്ങൾ</string>
+    <string name="home">മാസ്റ്റർ</string>
+    <string name="hello_blank_fragment">ഹലോ, ശൂന്യമായ ഘടകം</string>
+    <string name="selected_language_error">ദയവായി ഭാഷ തിരഞ്ഞെടുക്കുക</string>
+    <!-- English -->
+    <string name="english">English</string>
+    <string name="english_title">English</string>
+
+    <!-- Hindi -->
+    <string name="hindi">हिंदी</string>
+    <string name="hindi_title">Hindi</string>
+
+    <!-- Bengali -->
+    <string name="bengali">বাংলা</string>
+    <string name="bengali_title">Bengali</string>
+
+    <!-- Malayalam -->
+    <string name="malayalam">മലയാളം</string>
+    <string name="malayalam_title">Malayalam</string>
+
+    <!-- Tamil -->
+    <string name="tamil">தமிழ்</string>
+    <string name="tamil_title">Tamil</string>
+
+    <!-- Arabic -->
+    <string name="arabic">العربية</string>
+    <string name="arabic_title">Arabic</string>
+
+    <!-- Spanish -->
+    <string name="spanish">Español</string>
+    <string name="spanish_title">Spanish</string>
+
+    <!-- Marathi -->
+    <string name="marathi">मराठी</string>
+    <string name="marathi_title">Marathi</string>
+    <string name="next">മുമ്പോട്ട്</string>
+    <string name="get_started">ആരംഭിക്കുക</string>
+    <string name="skip">വട്ടം കളയുക</string>
+    <string name="continue_">ഓർമപ്പെടുത്തുക</string>
+    <string name="title_beachfront_adventure">ബീച്ച്ഫ്രണ്ട് സാഹസികത</string>
+    <string name="title_seaside_relaxation">കടൽത്തീരത്ത് വിശ്രമം</string>
+    <string name="desc_sun_and_sand">സൂര്യന്റെ തിളക്കം ആസ്വദിച്ച്, നിങ്ങളുടെ കാലുകളിൽ ചെറുമണലിന്റെ മൃദുവായ സ്പർശം അനുഭവിക്കുക. നിങ്ങളുടെ ചില്ലുകിടത്തുകായുള്ള ഏറ്റവും നല്ല തീരയാത്രയോ രണ്ടും ഒന്നിക്കുമോ എന്ന് സംശയിക്കേണ്ട കാര്യമില്ല. </string>
+    <string name="desc_beachfront_adventure">അത്ഭുതകരമായ ജലകായികങ്ങൾ, തീരവും അനുഭവങ്ങളുടെ ഒരു ദിവസം ചെലവഴിക്കുക.</string>
+    <string name="desc_seaside_relaxation">സഹായമുള്ള ബുക്കിംഗുകൾക്കും മറ്റുമുള്ള സുഖമുള്ള സീറ്റ്‌.</string>
+</resources>

@@ -1,6 +1,7 @@
 package com.sanika.beachapplication.activity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
@@ -17,17 +18,21 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.sanika.beachapplication.R;
+import com.sanika.beachapplication.constance.AppLocaleLanguage;
+import com.sanika.beachapplication.constance.SharedPref;
 
 public class SplashScreen extends AppCompatActivity {
     private static final int SPLASH_SCREEN=4000;
     private Animation topAnim , bottomAnim;
     private ImageView logo;
     private TextView app_Name , slogan;
+    SharedPreferences sharedPreferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        sharedPreferences = SharedPref.getSharedPref(SplashScreen.this);
 
         setContentView(R.layout.activity_splash_screen);
         topAnim= AnimationUtils.loadAnimation(this,R.anim.top_animation);
@@ -38,6 +43,9 @@ public class SplashScreen extends AppCompatActivity {
         logo.setAnimation(topAnim);
         app_Name.setAnimation(bottomAnim);
         slogan.setAnimation(bottomAnim);
+        String language = SharedPref.getString(sharedPreferences, SharedPref.locale);
+
+        AppLocaleLanguage.setApplicationLocale(SplashScreen.this,"en");
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تطبيق الشاطئ</string>
+    <string name="slogan">اعثر على يوم الشاطئ المثالي كل يوم</string>
+    <string name="close">إغلاق</string>
+    <string name="done_">تم</string>
+    <string name="verison_1_0_0">الإصدار: 1.0.0</string>
+    <string name="weather_alert">تنبيه الطقس</string>
+    <string name="weather_alert_dis">هناك أمطار غزيرة وحرارة عالية في الخارج حالياً. ابق آمناً!</string>
+    <string name="weather_heavy_rain">أمطار غزيرة</string>
+    <string name="weather_thunderstorm">عاصفة رعدية</string>
+    <string name="weather_clear">صافي</string>
+    <string name="weather_sunny">مشمس</string>
+    <string name="weather_cloud">غائم</string>
+    <string name="weather_hot">حار</string>
+    <string name="weather_snow">ثلج</string>
+    <string name="weather_fog">ضباب</string>
+    <string name="weather_mist">ضباب خفيف</string>
+    <string name="weather_hail">بَرَد</string>
+    <string name="weather_windy">عاصف</string>
+    <string name="weather_storm">عاصفة</string>
+    <string name="weather_drizzle">رذاذ</string>
+    <string name="weather_sleet">مطر ثلجي</string>
+    <string name="weather_cold">بارد</string>
+    <string name="weather_haze">غشاوة</string>
+    <string name="alert_heavy_rain_hot">تنبيه: أمطار غزيرة وحرارة عالية</string>
+    <string name="alert_thunderstorm">تنبيه: عاصفة رعدية</string>
+    <string name="alert_extreme_heat">تنبيه: حرارة مرتفعة جداً</string>
+    <string name="alert_snow">تنبيه: تساقط الثلوج</string>
+    <string name="alert_fog">تنبيه: ضباب</string>
+    <string name="alert_hail">تنبيه: بَرَد</string>
+    <string name="alert_strong_winds">تنبيه: عواصف ورياح قوية</string>
+    <string name="alert_extreme_cold">تنبيه: درجات حرارة منخفضة جداً</string>
+    <string name="alert_haze">تنبيه: غشاوة بسبب ضعف الرؤية وجودة الهواء</string>
+    <string name="title_sun_and_sand">الشمس والرمال</string>
+    <string name="title_beachfront_adventure">مغامرة على الشاطئ</string>
+    <string name="app_language">لغة التطبيق</string>
+    <string name="app_details">تفاصيل التطبيق</string>
+    <string name="home">الرئيسية</string>
+    <string name="hello_blank_fragment">مرحبًا، الجزء الفارغ</string>
+    <string name="selected_language_error">يرجى اختيار اللغة</string>
+    <!-- English -->
+    <string name="english">English</string>
+    <string name="english_title">English</string>
+
+    <!-- Hindi -->
+    <string name="hindi">हिंदी</string>
+    <string name="hindi_title">Hindi</string>
+
+    <!-- Bengali -->
+    <string name="bengali">বাংলা</string>
+    <string name="bengali_title">Bengali</string>
+
+    <!-- Malayalam -->
+    <string name="malayalam">മലയാളം</string>
+    <string name="malayalam_title">Malayalam</string>
+
+    <!-- Tamil -->
+    <string name="tamil">தமிழ்</string>
+    <string name="tamil_title">Tamil</string>
+
+    <!-- Arabic -->
+    <string name="arabic">العربية</string>
+    <string name="arabic_title">Arabic</string>
+
+    <!-- Spanish -->
+    <string name="spanish">Español</string>
+    <string name="spanish_title">Spanish</string>
+
+    <!-- Marathi -->
+    <string name="marathi">मराठी</string>
+    <string name="marathi_title">Marathi</string>
+    <string name="continue_">استمر</string>
+    <string name="next">التالي</string>
+    <string name="get_started">ابدأ</string>
+    <string name="skip">تخطي</string>
+    <string name="title_seaside_relaxation">استرخاء على البحر</string>
+    <string name="desc_sun_and_sand">استمتع بأشعة الشمس الذهبية وشعر بالرمال الناعمة بين قدميك. ملاذك المثالي للشاطئ بانتظارك.</string>
+    <string name="desc_beachfront_adventure">اختبر الرياضات المائية المثيرة، وألعاب الشاطئ، والأنشطة الساحلية لقضاء يوم لا يُنسى بجانب البحر.</string>
+    <string name="desc_seaside_relaxation">استرخ مع حجوزات سهلة لكراسي الشاطئ والمظلات والمزيد. دع نسيم البحر ينعش حياتك.</string>
+</resources>

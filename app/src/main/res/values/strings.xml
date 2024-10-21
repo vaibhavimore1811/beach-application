@@ -1,9 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Beach Application</string>
     <string name="slogan">Find Your Perfect Beach Day, Every Day</string>
     <string name="close">Close</string>
     <string name="done_">Done</string>
+    <string name="verison_1_0_0">Version : 1.0.0</string>
+    <string name="weather_alert">Weather Alert</string>
+    <string name="weather_alert_dis">It\'s currently heavy rain and hot outside. Stay safe!</string>
+    <string name="weather_heavy_rain">heavy rain</string>
+    <string name="weather_thunderstorm">thunderstorm</string>
+    <string name="weather_clear">clear</string>
+    <string name="weather_sunny">sunny</string>
+    <string name="weather_cloud">cloud</string>
+    <string name="weather_hot">hot</string>
+    <string name="weather_snow">snow</string>
+    <string name="weather_fog">fog</string>
+    <string name="weather_mist">mist</string>
+    <string name="weather_hail">hail</string>
+    <string name="weather_windy">windy</string>
+    <string name="weather_storm">storm</string>
+    <string name="weather_drizzle">drizzle</string>
+    <string name="weather_sleet">sleet</string>
+    <string name="weather_cold">cold</string>
+    <string name="weather_haze">haze</string>
+    <string name="alert_heavy_rain_hot">Alert: Heavy rain with high temperature</string>
+    <string name="alert_thunderstorm">Alert: Thunderstorm</string>
+    <string name="alert_extreme_heat">Alert: Extremely high temperature</string>
+    <string name="alert_snow">Alert: Snowfall</string>
+    <string name="alert_fog">Alert: Fog</string>
+    <string name="alert_hail">Alert: Hail</string>
+    <string name="alert_strong_winds">Alert: Storms and strong winds</string>
+    <string name="alert_extreme_cold">Alert: Freezing temperatures</string>
+    <string name="alert_haze">Alert: Haze due to poor visibility and air quality</string>
+    <string name="title_sun_and_sand">Sun &amp; Sand</string>
+    <string name="title_beachfront_adventure">Beachfront Adventure</string>
+    <string name="title_seaside_relaxation">Seaside Relaxation</string>
+    <string name="desc_sun_and_sand">Bask in the golden rays and feel the soft sand between your toes. Your perfect beach escape awaits.</string>
+    <string name="desc_beachfront_adventure">Experience thrilling water sports, beach games, and coastal activities for an unforgettable day by the sea.</string>
+    <string name="desc_seaside_relaxation">Unwind with easy bookings for beach chairs, umbrellas, and more. Relax and let the ocean breeze rejuvenate you.</string>
+    <string name="app_language">App Language</string>
+    <string name="app_details">App Details</string>
+    <string name="home">Home</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="verison_1_0_0">Verison : 1.0.0</string>
+    <string name="selected_language_error">Please Select Language </string>
+    <string name="continue_">Continue</string>
+    <!-- English -->
+    <string name="english">English</string>
+    <string name="english_title">English</string>
+
+    <!-- Hindi -->
+    <string name="hindi">हिंदी</string>
+    <string name="hindi_title">Hindi</string>
+
+    <!-- Bengali -->
+    <string name="bengali">বাংলা</string>
+    <string name="bengali_title">Bengali</string>
+
+    <!-- Malayalam -->
+    <string name="malayalam">മലയാളം</string>
+    <string name="malayalam_title">Malayalam</string>
+
+    <!-- Tamil -->
+    <string name="tamil">தமிழ்</string>
+    <string name="tamil_title">Tamil</string>
+
+    <!-- Arabic -->
+    <string name="arabic">العربية</string>
+    <string name="arabic_title">Arabic</string>
+
+    <!-- Spanish -->
+    <string name="spanish">Español</string>
+    <string name="spanish_title">Spanish</string>
+
+    <!-- Marathi -->
+    <string name="marathi">मराठी</string>
+    <string name="marathi_title">Marathi</string>
+    <string name="next">Next</string>
+    <string name="get_started">Get Started</string>
+    <string name="skip">Skip</string>
+    <string name="curremt_temp">Curremt Temp :</string>
+    <string name="wind_speed">Wind Speed :</string>
+    <string name="humidity">Humidity :</string>
+    <string name="wind_speed_">Wind Speed</string>
+    <string name="humidity_">Humidity</string>
+    <string name="temperature">Temperature</string>
+    <string name="water_temp">Water Temp</string>
 </resources>

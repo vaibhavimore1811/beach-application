@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplicación de Playa</string>
+    <string name="slogan">Encuentra tu día de playa perfecto, todos los días</string>
+    <string name="close">Cerrar</string>
+    <string name="done_">Hecho</string>
+    <string name="verison_1_0_0">Versión: 1.0.0</string>
+    <string name="weather_alert">Alerta Meteorológica</string>
+    <string name="weather_alert_dis">Actualmente hay lluvia fuerte y hace mucho calor afuera. ¡Mantente a salvo!</string>
+    <string name="weather_heavy_rain">lluvia fuerte</string>
+    <string name="weather_thunderstorm">tormenta eléctrica</string>
+    <string name="weather_clear">despejado</string>
+    <string name="weather_sunny">soleado</string>
+    <string name="weather_cloud">nublado</string>
+    <string name="weather_hot">caliente</string>
+    <string name="weather_snow">nieve</string>
+    <string name="weather_fog">niebla</string>
+    <string name="weather_mist">neblina</string>
+    <string name="weather_hail">granizo</string>
+    <string name="weather_windy">ventoso</string>
+    <string name="weather_storm">tormenta</string>
+    <string name="weather_drizzle">llovizna</string>
+    <string name="weather_sleet">aguanieve</string>
+    <string name="weather_cold">frío</string>
+    <string name="weather_haze">neblina</string>
+    <string name="alert_heavy_rain_hot">Alerta: Lluvia fuerte con alta temperatura</string>
+    <string name="alert_thunderstorm">Alerta: Tormenta eléctrica</string>
+    <string name="alert_extreme_heat">Alerta: Temperatura extremadamente alta</string>
+    <string name="alert_snow">Alerta: Nevada</string>
+    <string name="alert_fog">Alerta: Niebla</string>
+    <string name="alert_hail">Alerta: Granizo</string>
+    <string name="alert_strong_winds">Alerta: Tormentas y vientos fuertes</string>
+    <string name="alert_extreme_cold">Alerta: Temperaturas bajo cero</string>
+    <string name="alert_haze">Alerta: Neblina por baja visibilidad y mala calidad del aire</string>
+    <string name="title_sun_and_sand">Sol y Arena</string>
+    <string name="title_beachfront_adventure">Aventura en la Playa</string>
+    <string name="app_language">Idioma de la aplicación</string>
+    <string name="app_details">Detalles de la aplicación</string>
+    <string name="home">Inicio</string>
+    <string name="hello_blank_fragment">Hola, fragmento en blanco</string>
+    <string name="selected_language_error">Por favor, selecciona un idioma</string>
+    <!-- English -->
+    <string name="english">English</string>
+    <string name="english_title">English</string>
+
+    <!-- Hindi -->
+    <string name="hindi">हिंदी</string>
+    <string name="hindi_title">Hindi</string>
+
+    <!-- Bengali -->
+    <string name="bengali">বাংলা</string>
+    <string name="bengali_title">Bengali</string>
+
+    <!-- Malayalam -->
+    <string name="malayalam">മലയാളം</string>
+    <string name="malayalam_title">Malayalam</string>
+
+    <!-- Tamil -->
+    <string name="tamil">தமிழ்</string>
+    <string name="tamil_title">Tamil</string>
+
+    <!-- Arabic -->
+    <string name="arabic">العربية</string>
+    <string name="arabic_title">Arabic</string>
+
+    <!-- Spanish -->
+    <string name="spanish">Español</string>
+    <string name="spanish_title">Spanish</string>
+
+    <!-- Marathi -->
+    <string name="marathi">मराठी</string>
+    <string name="marathi_title">Marathi</string>
+    <string name="continue_">Continuar</string>
+    <string name="next">Siguiente</string>
+    <string name="get_started">Comenzar</string>
+    <string name="skip">Omitir</string>
+    <string name="title_seaside_relaxation">Relajación en la Playa</string>
+    <string name="desc_sun_and_sand">Disfruta de los rayos dorados del sol y siente la suave arena entre tus pies. Tu escape perfecto a la playa te espera.</string>
+    <string name="desc_beachfront_adventure">Experimenta deportes acuáticos emocionantes, juegos de playa y actividades costeras para un día inolvidable junto al mar.</string>
+    <string name="desc_seaside_relaxation">Relájate con reservaciones fáciles para sillas de playa, sombrillas y más. Deja que la brisa del mar te rejuvenezca.</string>
+</resources>

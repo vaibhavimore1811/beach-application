@@ -14,70 +14,269 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/ic_arrow_back_black_24dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" />
+        android:src="@drawable/ic_arrow_back_black_24dp" />
 
     <TextView
         android:id="@+id/textViewBeachName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/imageView3"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/open_sans_bold"
         android:text="Mughal Gardens, Srinagar"
         android:textColor="@android:color/background_dark"
-        android:textSize="18sp"
-        android:layout_below="@id/imageView3" />
+        android:textSize="18sp" />
 
     <LinearLayout
         android:id="@+id/linerlYlTemp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewBeachName"
+
         android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/imgtemp"
-            android:layout_width="@dimen/dim_30"
-            android:layout_height="@dimen/dim_30"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/sun"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textSize="15sp"
+            android:layout_below="@id/imageView3"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/open_sans"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="@dimen/dim_10"
-            android:id="@+id/textViewTemperature"/>
+            android:text="@string/curremt_temp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="13sp" />
 
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgtemp"
+                android:layout_width="@dimen/dim_25"
+                android:layout_height="@dimen/dim_25"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/sun" />
+
+            <TextView
+                android:id="@+id/textViewTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dim_10"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/app_name"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textViewWeatherDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dim_5"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/app_name"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linerlYlTemp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linerlYlTemp"
+        android:orientation="horizontal">
+
+        <!-- Wind Speed -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
+            android:layout_below="@id/imageView3"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/open_sans"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="@dimen/dim_5"
-            android:id="@+id/textViewWeatherDescription"/>
+            android:text="@string/wind_speed_"
+            android:textColor="@android:color/background_dark"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <!-- Wind Speed Icon -->
+            <ImageView
+                android:layout_width="@dimen/dim_25"
+                android:layout_height="@dimen/dim_25"
+                android:contentDescription="@string/wind_speed"
+                android:src="@drawable/wind" />
+
+            <!-- Wind Speed Text -->
+            <TextView
+                android:id="@+id/textViewTepWind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dim_10"
+                android:fontFamily="@font/open_sans"
+                android:text="0.0 m/s"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linerlYlTemp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linerlYlTemp1"
+        android:orientation="horizontal">
+
+        <!-- Humidity -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/humidity_"
+            android:textColor="@android:color/background_dark"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <!-- Humidity Icon -->
+            <ImageView
+                android:layout_width="@dimen/dim_25"
+                android:layout_height="@dimen/dim_25"
+                android:contentDescription="Humidity"
+                android:src="@drawable/humidity" />
+
+            <!-- Humidity Text -->
+            <TextView
+                android:id="@+id/textViewTephumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dim_10"
+                android:fontFamily="@font/open_sans"
+                android:text="0 %"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linerlYlTemp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linerlYlTemp2"
+        android:orientation="horizontal">
+
+        <!-- Temperature -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/temperature"
+            android:textColor="@android:color/background_dark"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <!-- Temperature Icon -->
+            <ImageView
+                android:layout_width="@dimen/dim_25"
+                android:layout_height="@dimen/dim_25"
+                android:contentDescription="Temperature"
+                android:src="@drawable/hot" />
+
+            <!-- Temperature Text -->
+            <TextView
+                android:id="@+id/textViewTepTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dim_10"
+                android:fontFamily="@font/open_sans"
+                android:text="0.0 °C"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linerlYlTemp4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linerlYlTemp3"
+        android:orientation="horizontal">
+
+        <!-- Water Temperature -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/water_temp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <!-- Water Temp Icon -->
+            <ImageView
+                android:layout_width="@dimen/dim_25"
+                android:layout_height="@dimen/dim_25"
+                android:contentDescription="Water Temperature"
+                android:src="@drawable/sleet" />
+
+            <!-- Water Temp Text -->
+            <TextView
+                android:id="@+id/textViewWaterTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dim_10"
+                android:fontFamily="@font/open_sans"
+                android:text="0.0 °C"
+                android:textSize="13sp" />
+        </LinearLayout>
     </LinearLayout>
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewHotels"
         android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="10dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/linerlYlTemp"/>
-
-
-
+        android:layout_below="@id/linerlYlTemp4"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp" />
 
 
 </RelativeLayout>

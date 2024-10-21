@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">बीच अ‍ॅप्लिकेशन</string>
+    <string name="slogan">दररोज आपल्या परिपूर्ण बीचचा दिवस शोधा</string>
+    <string name="close">बंद करा</string>
+    <string name="done_">पूर्ण झाले</string>
+    <string name="verison_1_0_0">आवृत्ती: 1.0.0</string>
+    <string name="weather_alert">हवामान चेतावणी</string>
+    <string name="weather_alert_dis">सध्या बाहेर जोरदार पाऊस आणि उष्णता आहे. सुरक्षित रहा!</string>
+    <string name="weather_heavy_rain">जोरदार पाऊस</string>
+    <string name="weather_thunderstorm">विजांचा कडकडाट</string>
+    <string name="weather_clear">स्वच्छ</string>
+    <string name="weather_sunny">सूर्यप्रकाश</string>
+    <string name="weather_cloud">ढगाळ</string>
+    <string name="weather_hot">गरम</string>
+    <string name="weather_snow">बर्फ</string>
+    <string name="weather_fog">धुके</string>
+    <string name="weather_mist">मंजेरी</string>
+    <string name="weather_hail">गारा</string>
+    <string name="weather_windy">वारा</string>
+    <string name="weather_storm">वादळ</string>
+    <string name="weather_drizzle">रिमझिम</string>
+    <string name="weather_sleet">बर्फाळ पाऊस</string>
+    <string name="weather_cold">थंड</string>
+    <string name="weather_haze">धुंद</string>
+    <string name="alert_heavy_rain_hot">चेतावणी: जोरदार पाऊस आणि उष्णता</string>
+    <string name="alert_thunderstorm">चेतावणी: विजांचा कडकडाट</string>
+    <string name="alert_extreme_heat">चेतावणी: अत्यधिक उष्णता</string>
+    <string name="alert_snow">चेतावणी: बर्फवृष्टी</string>
+    <string name="alert_fog">चेतावणी: धुके</string>
+    <string name="alert_hail">चेतावणी: गारा</string>
+    <string name="alert_strong_winds">चेतावणी: वादळ आणि जोरदार वारे</string>
+    <string name="alert_extreme_cold">चेतावणी: अत्यधिक थंडी</string>
+    <string name="alert_haze">चेतावणी: धुंद आणि कमी दृश्यमानता</string>
+    <string name="title_sun_and_sand">सूर्य आणि वाळू</string>
+    <string name="app_language">अ‍ॅप भाषा</string>
+    <string name="app_details">अ‍ॅप तपशील</string>
+    <string name="home">घर</string>
+    <string name="hello_blank_fragment">नमस्कार, रिकामा भाग</string>
+    <string name="selected_language_error">कृपया भाषा निवडा</string>
+    <!-- English -->
+    <string name="english">English</string>
+    <string name="english_title">English</string>
+
+    <!-- Hindi -->
+    <string name="hindi">हिंदी</string>
+    <string name="hindi_title">Hindi</string>
+
+    <!-- Bengali -->
+    <string name="bengali">বাংলা</string>
+    <string name="bengali_title">Bengali</string>
+
+    <!-- Malayalam -->
+    <string name="malayalam">മലയാളം</string>
+    <string name="malayalam_title">Malayalam</string>
+
+    <!-- Tamil -->
+    <string name="tamil">தமிழ்</string>
+    <string name="tamil_title">Tamil</string>
+
+    <!-- Arabic -->
+    <string name="arabic">العربية</string>
+    <string name="arabic_title">Arabic</string>
+
+    <!-- Spanish -->
+    <string name="spanish">Español</string>
+    <string name="spanish_title">Spanish</string>
+
+    <!-- Marathi -->
+    <string name="marathi">मराठी</string>
+    <string name="marathi_title">Marathi</string>
+    <string name="continue_">सुरू ठेवा</string>
+    <string name="next">पुढे</string>
+    <string name="get_started">सुरू करा</string>
+    <string name="skip">काढा</string>
+    <string name="title_beachfront_adventure">बीचफ्रंट अ‍ॅडव्हेंचर</string>
+    <string name="title_seaside_relaxation">समुद्र किनारी विश्रांती</string>
+    <string name="desc_sun_and_sand">सुवर्ण किरणांमध्ये तल्लीन व्हा आणि आपल्या पायांखाली मऊ वाळूचा अनुभव घ्या।</string>
+    <string name="desc_beachfront_adventure">रोमांचक वॉटर स्पोर्ट्स, बीच गेम्स, आणि किनारी क्रियाकलापांचा आनंद घ्या।</string>
+    <string name="desc_seaside_relaxation">आरामदायक समुद्रकाठाच्या खुर्च्या, छत्र्या, आणि इतर वस्तूंसाठी सहज बुकिंग करा।</string>
+</resources>

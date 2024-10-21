@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/lylLanguageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/dim_80"
+                android:layout_height="@dimen/dim_80"
+                android:src="@drawable/languages"
+                android:padding="@dimen/dim_10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selected_language_error"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/open_sans_bold"
+                android:layout_marginStart="@dimen/dim_10"
+                android:textSize="@dimen/dim_20"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lylLanguageTitle"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:id="@+id/lylEnglish"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dim_5"
+                android:background="@drawable/round_corner_gray"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_10"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioEnglish"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_10"
+                            android:textSize="@dimen/sp_17"
+                            android:text="@string/english" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_3"
+                            android:textSize="@dimen/sp_11"
+                            android:layout_marginBottom="@dimen/dim_10"
+                            android:text="@string/english_title" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lylHindi"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dim_5"
+                android:background="@drawable/round_corner_gray"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_10"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioHindi"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_10"
+                            android:textSize="@dimen/sp_17"
+                            android:text="@string/hindi" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_3"
+                            android:textSize="@dimen/sp_11"
+                            android:layout_marginBottom="@dimen/dim_10"
+                            android:text="@string/hindi_title" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lylMarathi"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dim_5"
+                android:background="@drawable/round_corner_gray"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_10"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioMarathi"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_10"
+                            android:textSize="@dimen/sp_17"
+                            android:text="@string/marathi" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_3"
+                            android:textSize="@dimen/sp_11"
+                            android:layout_marginBottom="@dimen/dim_10"
+                            android:text="@string/marathi_title" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lylArabic"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dim_5"
+                android:background="@drawable/round_corner_gray"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_10"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioArabic"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_10"
+                            android:textSize="@dimen/sp_17"
+                            android:text="@string/arabic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_3"
+                            android:textSize="@dimen/sp_11"
+                            android:layout_marginBottom="@dimen/dim_10"
+                            android:text="@string/arabic_title" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lylSpanish"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dim_5"
+                android:background="@drawable/round_corner_gray"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_10"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioSpanish"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_10"
+                            android:textSize="@dimen/sp_17"
+                            android:text="@string/spanish" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_3"
+                            android:textSize="@dimen/sp_11"
+                            android:layout_marginBottom="@dimen/dim_10"
+                            android:text="@string/spanish_title" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lylBengali"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dim_5"
+                android:background="@drawable/round_corner_gray"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_10"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioBengali"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_10"
+                            android:textSize="@dimen/sp_17"
+                            android:text="@string/bengali" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_3"
+                            android:textSize="@dimen/sp_11"
+                            android:layout_marginBottom="@dimen/dim_10"
+                            android:text="@string/bengali_title" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lylMalayalam"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dim_5"
+                android:background="@drawable/round_corner_gray"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_10"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioMalayalam"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_10"
+                            android:textSize="@dimen/sp_17"
+                            android:text="@string/malayalam" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_3"
+                            android:textSize="@dimen/sp_11"
+                            android:layout_marginBottom="@dimen/dim_10"
+                            android:text="@string/malayalam_title" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lylTamil"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dim_5"
+                android:background="@drawable/round_corner_gray"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_10"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioTamil"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_10"
+                            android:textSize="@dimen/sp_17"
+                            android:text="@string/tamil" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_marginTop="@dimen/dim_3"
+                            android:textSize="@dimen/sp_11"
+                            android:layout_marginBottom="@dimen/dim_10"
+                            android:text="@string/tamil_title" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_gradient_style"
+                android:fontFamily="@font/open_sans_semibold"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/backgroundColor"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:paddingEnd="20dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:text="@string/continue_"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -8,19 +8,22 @@ import java.util.List;
 
 public class WeatherResponse {
     @SerializedName("main")
-    private Main main;
+    private TwnoOtherDetailsModel main;
 
     @SerializedName("weather")
     private List<Weather> weather;
 
+    @SerializedName("wind")
+    private WindModel wind;
+
     @SerializedName("name")
     private String cityName;
 
-    public Main getMain() {
+    public TwnoOtherDetailsModel getMain() {
         return main;
     }
 
-    public void setMain(Main main) {
+    public void setMain(TwnoOtherDetailsModel main) {
         this.main = main;
     }
 
@@ -30,6 +33,14 @@ public class WeatherResponse {
 
     public void setWeather(List<Weather> weather) {
         this.weather = weather;
+    }
+
+    public WindModel getWind() {
+        return wind;
+    }
+
+    public void setWind(WindModel wind) {
+        this.wind = wind;
     }
 
     public String getCityName() {
